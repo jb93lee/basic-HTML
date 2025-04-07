@@ -6,17 +6,106 @@
     <title>HTML 실습</title>
   </head>
   <body>
-    <h1>안녕하세요!</h1>
-    <p>이것은 문단입니다.</p>
-    <a href="https://www.example.com">링크 예시</a>
-    <img src="image.jpg" alt="이미지 설명" />
+    <div>
+      <h1>안녕하세요!</h1>
+      <img
+        src="https://plus.unsplash.com/premium_photo-1681412205359-a803b2649d57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D"
+        alt="table"
+      />
+      <ul>
+        <li>목록 항목 1</li>
+        <li>목록 항목 2</li>
+      </ul>
+    </div>
+    <div>
+      <a href="https://naver.com" target="#">NAVER로 이동</a>
+    </div>
+    <div>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+        dolor quae quasi. Neque unde ex mollitia! Sint id eos magni, commodi
+        repudiandae temporibus, doloribus ex quae ipsum corporis odio atque!
+      </h1>
+      <p>
+        Lorem ipsum <strong>dolor</strong> sit amet consectetur, adipisicing
+        elit. Aut ratione quo aperiam? Vero eum assumenda itaque eius alias
+        impedit praesentium ipsa quas? Placeat cumque aspernatur temporibus,
+        culpa fugit facere amet hic nam natus totam pariatur soluta repellendus
+        libero explicabo eaque vel in reiciendis magni ducimus magnam doloribus
+        officiis nisi? Perferendis laboriosam magni tempore dignissimos dolores
+        vel fuga repudiandae alias, at fugiat porro iste facere quaerat harum
+        quod, dicta sint doloribus facilis molestias eum recusandae minus animi?
+        Ipsam, fuga explicabo. Mollitia porro repellat corporis maxime. A
+        impedit quod nisi magnam quibusdam nemo, amet aspernatur ullam animi
+        placeat libero consequatur dignissimos eius incidunt ex rerum voluptatum
+        ut inventore harum laborum soluta sequi? Non, iure eveniet? Debitis
+        dolorem rerum tenetur ut eius natus atque minus dolores unde dignissimos
+        voluptatum nam, quidem ullam numquam, quibusdam quaerat assumenda
+        commodi aliquam, voluptatibus possimus totam id nisi. Adipisci laborum
+        nam, maxime ducimus, facilis quae quibusdam blanditiis nisi earum
+        officiis mollitia cupiditate consequuntur omnis obcaecati?
+      </p>
+    </div>
+
+    <ol>
+      <li>item #1</li>
+      <li>item #2</li>
+      <li>item #3</li>
+    </ol>
+
     <ul>
-      <li>목록 항목 1</li>
-      <li>목록 항목 2</li>
+      <li>item #1</li>
+      <li>item #2</li>
+      <li>item #3</li>
     </ul>
-    <div></div>
-    <div></div>
-    <p>p태그</p>
-    <a href="https://naver.com" target="#">NAVER로 이동</a>
+
+    <!-- 수평선 태그 -->
+    <hr />
+    <h1>로그인</h1>
+    <form>
+      아이디 :
+      <input
+        type="text"
+        name="userid"
+        placeholder="아이디를 입력해주세요"
+        required
+      /><br />
+      패스워드 :
+      <input
+        type="password"
+        name="password"
+        placeholder="비밀번호를 입력해주세요"
+        required
+      />
+      <br />
+      <input type="submit" value="로그인" />
+    </form>
+    <form>
+      <input type="checkbox" name="hobby" id="1" checked />
+      <label for="1">a</label>
+      <input type="checkbox" name="hobby" id="2" />b
+      <input type="checkbox" name="hobby" id="3" />c
+    </form>
+    <form>
+      <label>
+        <input type="radio" name="gender" value="male" />
+        남성
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" />
+        여성
+      </label>
+    </form>
+    <br />
+    <form>
+      <label for="food">성별 :</label>
+      <select name="gender" id="gender">
+        <option value="male">남성</option>
+        <option value="female">여성</option>
+        <option value="etc" selected>기타</option>
+      </select>
+      <button type="submit">제출하기</button>
+    </form>
   </body>
 </html>
+g
