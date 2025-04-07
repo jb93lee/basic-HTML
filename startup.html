@@ -144,6 +144,34 @@
         text-decoration: none;
       }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("header button").onclick = () => {
+          window.scrollTo({
+            top: document.querySelector("#pricing").offsetTop,
+            behavior: "smooth",
+          });
+        };
+
+        document.querySelectorAll(".plan button").forEach((button) => {
+          button.onclick = (e) => {
+            alert(
+              `${
+                e.target.parentElement.querySelector("h3").textContent
+              } 요금제를 선택하셨습니다.`
+            );
+          };
+        });
+
+        document.querySelector("form").addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert(
+            "문의가 성공적으로 제출되었습니다. 빠른 시일 내에 연락드리겠습니다."
+          );
+          e.target.reset();
+        });
+      });
+    </script>
   </head>
   <body>
     <nav>

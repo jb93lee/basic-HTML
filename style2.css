@@ -1,0 +1,61 @@
+/* 전체 초기화 (Reset 일부) */
+@import url("reset.css");
+  
+  /* 푸터 스타일 */
+  footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+
+  /* landing.css */
+
+/* common */
+button {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* 홈 섹션 */
+.home-section {
+  text-align: center;
+  /* background-color: #0056b3; */
+  padding: 60px 0;
+}
+
+
+.main button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.nav-list{
+    display: flex;
+    gap: 15px;
+}
+.nav-list::before{
+    content: "";
+    width: 2px;
+    height: 10px;
+    background-color: blue;
+    margin: 0 4px;
+}
